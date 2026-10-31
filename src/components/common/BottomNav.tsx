@@ -35,7 +35,7 @@ export const BottomNav: React.FC = () => {
     },
     {
       id: 'allocation',
-      label: 'Allocation',
+      label: 'Credits',
       icon: 'pie_chart',
       path: '/credit-allocation',
       matchPrefix: ['/credit-allocation']

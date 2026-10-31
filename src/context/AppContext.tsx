@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useCallback, useContext, useState, useEffect } from 'react';
 import { 
   UserProfile, 
   CommunityProject, 
@@ -120,11 +120,11 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return hash || '/';
   });
 
-  const navigateTo = (path: string) => {
+  const navigateTo = useCallback((path: string) => {
     window.location.hash = path;
     setCurrentPath(path);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }, []);
 
   useEffect(() => {
     const handleHashChange = () => {
