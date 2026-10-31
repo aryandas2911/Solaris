@@ -138,8 +138,8 @@ export const INITIAL_COMMUNITY: CommunityProject = {
   netTargetInr: 412000,
   subsidyEligibleInr: 268000,
   totalCommittedInr: 345000,
-  committedMembersCount: 11,
-  totalEligibleFlats: 14,
+  committedMembersCount: 15,
+  totalEligibleFlats: 20,
   members: [
     {
       id: 'm1',
