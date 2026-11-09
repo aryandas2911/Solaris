@@ -45,30 +45,30 @@ const RouterView: React.FC = () => {
       case '/':
         return 'Public Showcase';
       case '/dashboard':
-        return 'Main Dashboard';
+        return 'Community solar command centre';
       case '/onboarding':
-        return 'Location & Profile Setup';
+        return 'Location & profile setup';
       case '/assessment':
-        return 'Solar Feasibility Calculator';
+        return 'Solar feasibility calculator · F04';
       case '/regulations':
-        return 'Regulatory Eligibility Checker';
+        return 'VNM readiness · F02';
       case '/community':
-        return 'Community Solar Workspace';
+        return 'Community workspace · F01';
       case '/optimiser':
-        return 'Smart Affordability Optimiser';
+        return 'Benefit-aware plan optimiser · F05';
       case '/credit-allocation':
-        return 'Transparent Credit Allocation';
+        return 'Credit reconciliation · F09';
       case '/monitoring':
-        return 'Synthetic O&M Monitoring';
+        return 'Provider & O&M evidence · F07';
       case '/reports':
-        return 'Reports & Statutory Statements';
+        return 'Statements & plan-vs-actual · F08/F10';
       case '/admin':
-        return 'Rules & Audit Ledger';
+        return 'Rules, approvals & audit ledger';
       default:
         if (currentPath.startsWith('/community')) {
-          return 'Community Solar Workspace';
+          return 'Community workspace · F01';
         }
-        return 'Main Dashboard';
+        return 'Community solar command centre';
     }
   };
 
